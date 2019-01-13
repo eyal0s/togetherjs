@@ -1,6 +1,3 @@
-/* This Source Code Form is subject to the terms of the Mozilla Public
- * License, v. 2.0. If a copy of the MPL was not distributed with this file,
- * You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 /*jshint scripturl:true */
 (function () {
@@ -47,25 +44,25 @@
     // Also with findRoom: "roomName" it will connect to the given room name
     findRoom: null,
     // If true, starts TogetherJS automatically (of course!)
-    autoStart: false,
+    autoStart: true,
     // If true, then the "Join TogetherJS Session?" confirmation dialog
     // won't come up
-    suppressJoinConfirmation: false,
+    suppressJoinConfirmation: true,
     // If true, then the "Invite a friend" window won't automatically come up
-    suppressInvite: false,
+    suppressInvite: true,
     // A room in which to find people to invite to this session,
     inviteFromRoom: null,
     // This is used to keep sessions from crossing over on the same
     // domain, if for some reason you want sessions that are limited
     // to only a portion of the domain:
-    storagePrefix: "togetherjs",
+    storagePrefix: "dot",
     // When true, we treat the entire URL, including the hash, as the identifier
     // of the page; i.e., if you one person is on `http://example.com/#view1`
     // and another person is at `http://example.com/#view2` then these two people
     // are considered to be at completely different URLs
     includeHashInUrl: false,
     // When true, the WebRTC-based mic/chat will be disabled
-    disableWebRTC: false,
+    disableWebRTC: true,
     // When true, youTube videos will synchronize
     youtube: true,
     // Ignores the following console messages, disables all messages if set to true
